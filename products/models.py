@@ -4,13 +4,11 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название категории')
-    description = models.TextField(blank=True, verbose_name='Описание категории')
 
     def __str__(self):
         return self.name
 
     class Meta:
-        verbose_name = 'Категории'
         verbose_name_plural = 'Категория'
 
 class Product(models.Model):
