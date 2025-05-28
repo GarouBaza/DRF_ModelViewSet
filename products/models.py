@@ -9,7 +9,9 @@ class Category(models.Model):
         return self.name
 
     class Meta:
-        verbose_name_plural = 'Категория'
+        verbose_name = 'Категория'
+        verbose_name_plural = 'Категории'
+
 
 class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название товара')
