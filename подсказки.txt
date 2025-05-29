@@ -1,0 +1,2 @@
+запрос по фильтру для Category
+http://127.0.0.1:8000/api/categories/?name=Одежда
